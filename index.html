@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="WhatsApp Image 2024-10-28 at 22.48.07.jpeg" alt="Profile Image">
+            <div class="info">NIM: 607022300094</div>
+            <div class="info">KELAS: D3TK-47-04</div>
+            <div class="info">NAMA: EYGI EPRIMTA PASTANTA BANGUN</div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This page says</p>
+            <p>Selamat datang!</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            alert('Selamat datang!');
+        };
+
+        var modal = document.getElementById("modal");
+        var span = document.getElementsByClassName("close")[0];
+
+        document.body.onclick = function(event) {
+            if (event.target == modal || event.target.className === "close") {
+                modal.style.display = "none";
+            }
+        };
+
+       
+    </script>
+</body>
+</html>
